@@ -1,0 +1,30 @@
+{
+  "name": "virtual-anime-museum",
+  "version": "1.0.0",
+  "description": "A first-person museum in the browser whose doorways open onto worlds, built with Three.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "three.js",
+    "webgl",
+    "3d",
+    "museum",
+    "anime",
+    "first-person",
+    "procedural"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "astronomy-engine": "^2.1.19",
+    "three": "^0.174.0"
+  },
+  "devDependencies": {
+    "vite": "^6.2.1"
+  }
+}

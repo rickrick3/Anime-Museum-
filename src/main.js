@@ -11,6 +11,7 @@
 //    │               world answering the visitor) + src/soundscape.js, src/sounds/ and src/footsteps.js
 //    └── Content     src/content/ (the museum's words, and one folder per exhibition or universe)
 import * as THREE from 'three';
+import { inject } from '@vercel/analytics';
 import { PlayerController } from './player/playerController.js';
 import { AmbientAudio } from './audio.js';
 import { Footsteps } from './footsteps.js';
@@ -26,6 +27,9 @@ import { Placard } from './museum/placard.js';
 import { Transition } from './museum/transition.js';
 import museumContent from './content/museum.js';
 import { exhibitions } from './content/exhibitions/index.js';
+
+// Initialize Vercel Web Analytics
+inject();
 
 const INTERACTION_DISTANCE = 3; // Metres from the eye at which things can be examined
 const parameters = new URLSearchParams(window.location.search);
